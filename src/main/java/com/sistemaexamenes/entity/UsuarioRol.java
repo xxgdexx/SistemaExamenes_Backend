@@ -1,7 +1,11 @@
 package com.sistemaexamenes.entity;
 
-import javax.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.*;
+@Getter
+@Setter
 @Entity
 public class UsuarioRol {
     @Id
@@ -13,4 +17,7 @@ public class UsuarioRol {
 
     @ManyToOne
     private Rol rol;
+    public  UsuarioRol(){
+
+    }
 }
